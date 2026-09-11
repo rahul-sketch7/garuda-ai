@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Garuda AI - Privacy-first personal cyber safety agent"
+    >
+
+    <title>
+        Garuda AI | Personal Cyber Safety Agent
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<div class="page-background">
+
+    <div class="background-orb orb-one"></div>
+
+    <div class="background-orb orb-two"></div>
+
+    <div class="background-orb orb-three"></div>
+
+    <div class="background-grid"></div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                <span>🛡️</span>
+            </div>
+
+            <div class="brand-copy">
+
+                <h1>
+                    Garuda AI
+                </h1>
+
+                <p>
+                    Personal Cyber Safety Agent
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-status">
+
+            <span class="status-indicator"></span>
+
+            <span>
+                AI Online
+            </span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="main-container">
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <div class="hero-badge">
+
+        <span class="badge-icon">
+            🛡️
+        </span>
+
+        <span>
+            Privacy-first cyber protection
+        </span>
+
+    </div>
+
+
+    <h2>
+
+        Detect scams before
+
+        <span>
+            they harm you.
+        </span>
+
+    </h2>
+
+
+    <p class="hero-description">
+
+        Garuda AI analyzes suspicious messages and screenshots,
+        investigates them using trusted cyber-safety intelligence,
+        and explains what an attacker may be trying to do.
+
+    </p>
+
+
+    <div class="hero-points">
+
+        <div class="hero-point">
+            <span>🤖</span>
+            <span>AI Detection</span>
+        </div>
+
+        <div class="hero-point">
+            <span>🔎</span>
+            <span>Evidence Grounded</span>
+        </div>
+
+        <div class="hero-point">
+            <span>🛡️</span>
+            <span>Safety Guardrails</span>
+        </div>
+
+        <div class="hero-point">
+            <span>🔒</span>
+            <span>Privacy First</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ANALYZER
+========================================================= -->
+
+<section class="analyzer-card">
+
+
+    <div class="analyzer-top">
+
+        <div>
+
+            <span class="section-label">
+                GARUDA AI ANALYZER
+            </span>
+
+            <h2>
+                Check suspicious content
+            </h2>
+
+            <p>
+                Analyze a message or upload a screenshot.
+            </p>
+
+        </div>
+
+
+        <div class="local-badge">
+
+            <span>●</span>
+
+            Local AI
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODE TABS
+    ====================================================== -->
+
+    <div class="mode-tabs">
+
+
+        <button
+            id="message-mode"
+            class="mode-tab active"
+            type="button"
+        >
+
+            <span>
+                📩
+            </span>
+
+            <span>
+                Message
+            </span>
+
+        </button>
+
+
+        <button
+            id="screenshot-mode"
+            class="mode-tab"
+            type="button"
+        >
+
+            <span>
+                📸
+            </span>
+
+            <span>
+                Screenshot
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         MESSAGE INPUT
+    ====================================================== -->
+
+    <div
+        id="message-input-area"
+        class="input-panel"
+    >
+
+
+        <div class="input-heading-row">
+
+            <div>
+
+                <label
+                    for="message"
+                    class="input-title"
+                >
+                    Suspicious Message
+                </label>
+
+                <p class="input-subtitle">
+                    SMS, WhatsApp, email, chat, or other text
+                </p>
+
+            </div>
+
+
+            <span
+                id="char-count"
+                class="char-count"
+            >
+                0 / 5000
+            </span>
+
+        </div>
+
+
+        <textarea
+            id="message"
+            maxlength="5000"
+            placeholder="Paste a suspicious message here..."
+            autocomplete="off"
+            spellcheck="false"
+        ></textarea>
+
+
+        <div class="input-footer">
+
+            <div class="privacy-note">
+
+                <span>
+                    🔒
+                </span>
+
+                <span>
+                    Analyzed through the local Garuda AI pipeline.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="analyze-button"
+            class="primary-button"
+            type="button"
+        >
+
+            <span class="button-symbol">
+                🔍
+            </span>
+
+            <span>
+                Analyze Message
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         SCREENSHOT INPUT
+    ====================================================== -->
+
+    <div
+        id="screenshot-input-area"
+        class="input-panel hidden"
+    >
+
+
+        <div class="input-heading-row">
+
+            <div>
+
+                <label class="input-title">
+                    Suspicious Screenshot
+                </label>
+
+                <p class="input-subtitle">
+                    Upload an SMS, chat, email, or banking screenshot
+                </p>
+
+            </div>
+
+
+            <span class="file-types">
+                PNG · JPG · WEBP
+            </span>
+
+        </div>
+
+
+        <!-- =================================================
+             IMPORTANT:
+             This input is hidden visually.
+             The label below opens it directly.
+        ================================================== -->
+
+        <input
+            id="screenshot-input"
+            type="file"
+            accept="image/png,image/jpeg,image/webp"
+            style="display: none;"
+        >
+
+
+        <!-- =================================================
+             UPLOAD AREA
+        ================================================== -->
+
+        <div
+            id="screenshot-upload-area"
+            class="upload-zone"
+        >
+
+
+            <div
+                id="upload-placeholder"
+                class="upload-placeholder"
+            >
+
+
+                <div class="upload-icon">
+                    📸
+                </div>
+
+
+                <h3>
+                    Upload suspicious screenshot
+                </h3>
+
+
+                <p>
+                    Garuda AI will read the text from the image
+                    using local browser OCR.
+                </p>
+
+
+                <!--
+                    LABEL instead of JS-triggered button.
+                    This directly opens the file picker.
+                -->
+
+                <label
+                    for="screenshot-input"
+                    id="choose-screenshot-button"
+                    class="secondary-button upload-button"
+                >
+
+                    <span>
+                        📁
+                    </span>
+
+                    <span>
+                        Choose Screenshot
+                    </span>
+
+                </label>
+
+
+                <span class="upload-limit">
+                    Maximum file size: 10 MB
+                </span>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 IMAGE PREVIEW
+            ================================================== -->
+
+            <div
+                id="image-preview-container"
+                class="preview-container hidden"
+            >
+
+
+                <img
+                    id="image-preview"
+                    src=""
+                    alt="Screenshot preview"
+                >
+
+
+                <button
+                    id="remove-image"
+                    class="remove-image"
+                    type="button"
+                    aria-label="Remove screenshot"
+                >
+                    ✕
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             OCR CONTROLS
+        ================================================== -->
+
+        <div class="ocr-controls">
+
+
+            <div class="ocr-language-wrapper">
+
+                <label for="ocr-language">
+                    OCR Language
+                </label>
+
+
+                <select id="ocr-language">
+
+                    <option value="eng">
+                        English
+                    </option>
+
+                    <option value="eng+hin">
+                        English + Hindi
+                    </option>
+
+                    <option value="eng+tam">
+                        English + Tamil
+                    </option>
+
+                    <option value="eng+tel">
+                        English + Telugu
+                    </option>
+
+                    <option value="eng+kan">
+                        English + Kannada
+                    </option>
+
+                    <option value="eng+mal">
+                        English + Malayalam
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="screenshot-status"
+                class="ocr-status"
+            >
+                Ready for screenshot OCR.
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             ANALYZE SCREENSHOT
+        ================================================== -->
+
+        <button
+            id="analyze-screenshot-button"
+            class="primary-button"
+            type="button"
+            disabled
+        >
+
+            <span class="button-symbol">
+                📸
+            </span>
+
+            <span>
+                Analyze Screenshot
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     OCR RESULT
+========================================================= -->
+
+<section
+    id="ocr-result-card"
+    class="ocr-result-card hidden"
+>
+
+
+    <div class="ocr-result-header">
+
+        <div>
+
+            <span class="section-label">
+                OCR OUTPUT
+            </span>
+
+            <h3>
+                Text extracted from screenshot
+            </h3>
+
+        </div>
+
+
+        <span class="ocr-success-badge">
+            ✓ OCR Complete
+        </span>
+
+    </div>
+
+
+    <div
+        id="ocr-extracted-text"
+        class="ocr-extracted-text"
+    ></div>
+
+
+</section>
+
+
+<!-- =========================================================
+     LOADING
+========================================================= -->
+
+<section
+    id="loading"
+    class="loading-section hidden"
+>
+
+
+    <div class="loading-card">
+
+        <div class="loading-spinner"></div>
+
+
+        <h3>
+            Garuda AI is investigating
+        </h3>
+
+
+        <p id="loading-message">
+            Running the safety pipeline...
+        </p>
+
+
+        <div class="pipeline">
+
+
+            <div class="pipeline-item active">
+
+                <span class="pipeline-number">
+                    1
+                </span>
+
+                <span>
+                    Intake
+                </span>
+
+            </div>
+
+
+            <div class="pipeline-line"></div>
+
+
+            <div class="pipeline-item">
+
+                <span class="pipeline-number">
+                    2
+                </span>
+
+                <span>
+                    Fraud Analysis
+                </span>
+
+            </div>
+
+
+            <div class="pipeline-line"></div>
+
+
+            <div class="pipeline-item">
+
+                <span class="pipeline-number">
+                    3
+                </span>
+
+                <span>
+                    Risk Engine
+                </span>
+
+            </div>
+
+
+            <div class="pipeline-line"></div>
+
+
+            <div class="pipeline-item">
+
+                <span class="pipeline-number">
+                    4
+                </span>
+
+                <span>
+                    MCP + RAG
+                </span>
+
+            </div>
+
+
+            <div class="pipeline-line"></div>
+
+
+            <div class="pipeline-item">
+
+                <span class="pipeline-number">
+                    5
+                </span>
+
+                <span>
+                    Safety
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     ERROR
+========================================================= -->
+
+<section
+    id="error"
+    class="error-section hidden"
+>
+
+
+    <div class="error-card">
+
+
+        <div class="error-icon">
+            ✕
+        </div>
+
+
+        <div>
+
+            <span class="section-label error-label">
+                ANALYSIS ERROR
+            </span>
+
+
+            <h3>
+                Something went wrong
+            </h3>
+
+
+            <p id="error-message">
+                Unable to analyze the input.
+            </p>
+
+        </div>
+
+
+        <button
+            id="error-dismiss"
+            class="secondary-button"
+            type="button"
+        >
+            Try Again
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     RESULT
+========================================================= -->
+
+<section
+    id="result"
+    class="result-section hidden"
+>
+
+
+    <!-- RESULT HEADER -->
+
+    <div class="result-header">
+
+
+        <div>
+
+            <span class="section-label">
+                ANALYSIS COMPLETE
+            </span>
+
+            <h2>
+                Garuda AI Assessment
+            </h2>
+
+        </div>
+
+
+        <div
+            id="result-status-badge"
+            class="result-status-badge"
+        >
+            ✓ Completed
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         RESULT GRID
+    ====================================================== -->
+
+    <div class="result-grid">
+
+
+        <!-- CLASSIFICATION -->
+
+        <div class="result-card classification-card">
+
+            <span class="result-card-label">
+                CLASSIFICATION
+            </span>
+
+
+            <div
+                id="fraud-type"
+                class="classification-value"
+            >
+                —
+            </div>
+
+
+            <p>
+                Primary detected attack mechanism
+            </p>
+
+        </div>
+
+
+        <!-- RISK -->
+
+        <div class="result-card risk-card">
+
+            <span class="result-card-label">
+                RISK SCORE
+            </span>
+
+
+            <div class="risk-value-row">
+
+                <span
+                    id="risk-score"
+                    class="risk-value"
+                >
+                    0
+                </span>
+
+                <span class="risk-max">
+                    / 100
+                </span>
+
+            </div>
+
+
+            <div class="risk-bar">
+
+                <div
+                    id="risk-bar-fill"
+                    class="risk-bar-fill"
+                ></div>
+
+            </div>
+
+
+            <div
+                id="risk-level"
+                class="risk-level"
+            >
+                LOW
+            </div>
+
+
+        </div>
+
+
+        <!-- CONFIDENCE -->
+
+        <div class="result-card confidence-card">
+
+            <span class="result-card-label">
+                AI CONFIDENCE
+            </span>
+
+
+            <div class="confidence-value-row">
+
+                <span
+                    id="confidence"
+                    class="confidence-value"
+                >
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="confidence-bar">
+
+                <div
+                    id="confidence-bar-fill"
+                    class="confidence-bar-fill"
+                ></div>
+
+            </div>
+
+
+            <p>
+                Confidence in classification
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         SIGNALS
+    ====================================================== -->
+
+    <div class="detail-card">
+
+
+        <div class="detail-header">
+
+            <div>
+
+                <span class="section-label">
+                    DETECTED SIGNALS
+                </span>
+
+                <h3>
+                    Why this was flagged
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="signals"
+            class="signals-list"
+        ></div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         EXPLANATION
+    ====================================================== -->
+
+    <div class="detail-grid">
+
+
+        <div class="detail-card">
+
+
+            <div class="detail-icon">
+                🎯
+            </div>
+
+
+            <div>
+
+                <span class="detail-label">
+                    ATTACKER GOAL
+                </span>
+
+                <h3>
+                    What the attacker may want
+                </h3>
+
+
+                <p id="attacker-goal">
+                    —
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="detail-card">
+
+
+            <div class="detail-icon">
+                🛡️
+            </div>
+
+
+            <div>
+
+                <span class="detail-label">
+                    RECOMMENDED ACTION
+                </span>
+
+                <h3>
+                    What you should do
+                </h3>
+
+
+                <p id="recommended-action">
+                    —
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         EVIDENCE
+    ====================================================== -->
+
+    <div class="detail-card">
+
+
+        <div class="detail-header">
+
+
+            <div>
+
+                <span class="section-label">
+                    TRUSTED EVIDENCE
+                </span>
+
+                <h3>
+                    RAG grounding
+                </h3>
+
+                <p>
+                    Evidence retrieved from trusted cyber-safety sources.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div
+            id="evidence-list"
+            class="evidence-list"
+        ></div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         TRACE
+    ====================================================== -->
+
+    <div class="detail-card">
+
+
+        <div class="detail-header">
+
+
+            <div>
+
+                <span class="section-label">
+                    OBSERVABILITY
+                </span>
+
+                <h3>
+                    Agent pipeline trace
+                </h3>
+
+                <p>
+                    Every major step is recorded with timing and reason.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div
+            id="trace-list"
+            class="trace-list"
+        ></div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         ESCALATION
+    ====================================================== -->
+
+    <div
+        id="escalation-card"
+        class="escalation-card hidden"
+    >
+
+
+        <div class="escalation-icon">
+            ⚠️
+        </div>
+
+
+        <div>
+
+            <span class="section-label">
+                SAFETY ESCALATION
+            </span>
+
+
+            <h2>
+                Human Verification Required
+            </h2>
+
+
+            <p>
+                Garuda AI could not safely complete this analysis.
+                The case requires human verification.
+            </p>
+
+
+            <div
+                id="escalation-reasons"
+                class="escalation-reasons"
+            ></div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- NEW SCAN -->
+
+    <button
+        id="new-scan-button"
+        class="new-scan-button"
+        type="button"
+    >
+        ← Analyze Another Message
+    </button>
+
+
+</section>
+
+
+<!-- =========================================================
+     SECURITY SECTION
+========================================================= -->
+
+<section class="security-section">
+
+
+    <div class="security-icon">
+        🛡️
+    </div>
+
+
+    <div>
+
+        <span class="section-label">
+            SAFETY FIRST
+        </span>
+
+
+        <h3>
+            Garuda AI does not blindly trust its own answer.
+        </h3>
+
+
+        <p>
+            Low confidence, ambiguous classifications, weak evidence,
+            and suspicious prompt-injection patterns can trigger
+            human escalation.
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     CAPABILITIES
+========================================================= -->
+
+<section class="capabilities">
+
+
+    <div class="section-heading">
+
+
+        <span class="section-label">
+            GARUDA AI
+        </span>
+
+
+        <h2>
+            Built for real-world cyber threats
+        </h2>
+
+
+        <p>
+            Multiple specialized components work together
+            instead of relying on a single model response.
+        </p>
+
+
+    </div>
+
+
+    <div class="capability-grid">
+
+
+        <div class="capability-card">
+
+            <div class="capability-icon">
+                🤖
+            </div>
+
+
+            <h3>
+                Fraud Analysis Agent
+            </h3>
+
+
+            <p>
+                Identifies the primary attack mechanism and
+                classifies suspicious communication.
+            </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+            <div class="capability-icon">
+                ⚠️
+            </div>
+
+
+            <h3>
+                Risk Engine
+            </h3>
+
+
+            <p>
+                Converts fraud type and detected signals
+                into a 0–100 risk score.
+            </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+            <div class="capability-icon">
+                🔎
+            </div>
+
+
+            <h3>
+                MCP + RAG
+            </h3>
+
+
+            <p>
+                Investigates suspicious cases using trusted
+                cyber-safety intelligence.
+            </p>
+
+        </div>
+
+
+        <div class="capability-card">
+
+            <div class="capability-icon">
+                🛡️
+            </div>
+
+
+            <h3>
+                Safety Critic
+            </h3>
+
+
+            <p>
+                Checks confidence, grounding, ambiguity,
+                and prompt injection before responding.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+
+            <span>
+                🛡️
+            </span>
+
+            <strong>
+                Garuda AI
+            </strong>
+
+        </div>
+
+
+        <span>
+            Privacy-first cyber safety
+        </span>
+
+
+    </div>
+
+
+    <p>
+        Your content is processed through the Garuda AI safety pipeline.
+    </p>
+
+
+</footer>
+
+
+<!-- =========================================================
+     TESSERACT OCR
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"
+></script>
+
+
+<!-- =========================================================
+     GARUDA AI JAVASCRIPT
+========================================================= -->
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
